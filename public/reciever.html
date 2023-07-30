@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Share File</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h1>Recieve Files</h1>
+          <div class="form-input">
+            <label for="join-id">Join Id:  <input type="text" id="join-id" /> </label>
+          </div>
+          <div class="form-input">
+            <button id="reciever-start-con-btn" class="create-code-btn">Connect</button>
+          </div>
+      </div>
+      <div class="screen fs-screen">
+        <div class="files-list">
+          <div class="title">Shared files:</div>
+          <div class="item">
+            <div class="progress">0%</div>
+            <div class="filename">Abc.txt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="reciever.js"></script>
+  </body>
+</html>
