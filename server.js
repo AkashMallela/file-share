@@ -25,4 +25,4 @@ io.on("connection", function(socket){
         socket.in(data.uid).emit("fs-share", data.buffer);
     });
 });
-server.listen(5000);
+server.listen(3000);
